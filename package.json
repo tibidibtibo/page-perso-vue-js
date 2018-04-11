@@ -1,8 +1,12 @@
 {
-  "name": "vuejs-simplepage",
-  "version": "1.0.0",
-  "description": "",
+  "name": "page-perso",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "Page personelle 'Single Page with Vue.js'",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tibidibtibo/page-perso-vue-js"
+  },
   "scripts": {
     "start": "node ./server.js"
   },
