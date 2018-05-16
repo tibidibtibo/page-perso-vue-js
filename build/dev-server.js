@@ -2,6 +2,7 @@ const webpack = require("webpack");
 const clientConfig = require("./webpack.client.config");
 
 module.exports = function setupDevServer( app ) {
+
     clientConfig.entry.app = [
         "webpack-hot-middleware/client",
         clientConfig.entry.app
@@ -16,7 +17,7 @@ module.exports = function setupDevServer( app ) {
           stats: {
               colors: true
           }
-      })  
+      })
     );
     app.use(require("webpack-hot-middleware")(clientCompiler));
 }
