@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Category from './theme/Category.vue'
-import Login from './theme/Login.vue'
 import NotFound from './theme/NotFound.vue'
+import Accueil from './theme/Accueil.vue'
 
 Vue.use(VueRouter)
 
@@ -11,9 +10,8 @@ const router = new VueRouter({
   linkActiveClass: 'is-active',
   scrollBehavior: (to, from, savedPosition) => ({ y: 0 }),
   routes: [
-    { path: '/login', component: Login },
-    { path: '/category/:id', name: 'category', component: Category },
-    { path: '/', redirect: '/category/front-end' },
+    { path: '/accueil', component: Accueil },
+    { path: '/', redirect: '/accueil' },
     { path: '*', component: NotFound }
   ]
 })

@@ -8,6 +8,7 @@ const indexHTML = (() => {
 })();
 
 app.use("/dist", express.static(path.resolve(__dirname, "./dist")));
+app.use('/files', express.static(path.resolve(__dirname, './files')))
 
 require("./build/dev-server")(app);
 
@@ -19,4 +20,6 @@ app.get("*", (req, res) => {
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
 console.log(`Serveur démarré sur http://localhost:${port}`);
+
+console.log(path.dirname(__filename));
 });

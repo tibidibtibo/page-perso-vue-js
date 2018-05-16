@@ -1,6 +1,6 @@
 # Page-Perso
 
-Page personelle "Single Page with Vue.js"
+Page personelle http://de-boissieu.fr
 
 ## Construit avec
 
