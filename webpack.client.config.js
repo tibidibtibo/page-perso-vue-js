@@ -10,7 +10,7 @@ config.module.rules
 .forEach( x => x.options.extractCSS = true )
 
 config.plugins.push(
-  new ExtractTextPlugin('assets/styles.css')
+  new ExtractTextPlugin('dist/styles.css')
 )
 
 module.exports = config;

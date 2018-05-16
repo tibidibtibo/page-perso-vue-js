@@ -8,7 +8,9 @@
     "url": "https://github.com/tibidibtibo/page-perso-vue-js"
   },
   "scripts": {
-    "start": "node ./server.js",
+    "start": "npx webpack-dev-server --config ./webpack.client.config.js",
+    "build": "npx webpack --config ./webpack.client.config.js",
+    "watch": "npm run build -- --watch",
     "test": "karma start test/unit/karma.config.js --single-run"
   },
   "author": "tibidibtibo",
@@ -53,7 +55,6 @@
     "vue-loader": "^13.0.2",
     "vue-template-compiler": "^2.4.2",
     "webpack": "^3.5.5",
-    "webpack-dev-middleware": "^1.12.0",
-    "webpack-hot-middleware": "^2.18.2"
+    "webpack-dev-server": "^2.9.2"
   }
 }

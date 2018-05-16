@@ -2,7 +2,7 @@ const path = require("path");
 
 const config = {
   entry: {
-    app: path.resolve(__dirname, "../src/client-entry.js")
+    app: path.resolve(__dirname, "app/client-entry.js")
   },
   module: {
     rules: [
@@ -32,7 +32,7 @@ const config = {
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
-          publicPath: 'files/',
+          publicPath: 'images/',
         }
       },
       {
@@ -44,9 +44,12 @@ const config = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, "../dist"),
-    publicPath: "/",
-    filename: "assets/js/[name].js"
+    path: path.resolve(__dirname, "app/dist"),
+    filename: "[name].js"
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, "app"),
+    watchContentBase: true
   }
 };
 
