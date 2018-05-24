@@ -1,5 +1,6 @@
 const path = require("path")
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const config = {
   entry: {
@@ -28,7 +29,7 @@ const config = {
         exclude: /node_modules/
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|ico)$/i,
         exclude: [/node_modules/],
         loader: 'file-loader',
         options: {
@@ -37,11 +38,11 @@ const config = {
         }
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|ico)$/i,
         use: {
           loader: "url-loader"
         }
-      },
+      }
     ]
   },
   output: {
@@ -53,7 +54,10 @@ const config = {
     watchContentBase: true
   },
   plugins: [
-    new ExtractTextPlugin('styles.css')
+    new ExtractTextPlugin('styles.css'),
+    // new HtmlWebpackPlugin({
+    //   favicon: 'app/favicon.ico'
+    // })
   ]
 };
 
