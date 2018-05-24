@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import NotFound from './theme/NotFound.vue'
-import Accueil from './theme/Accueil.vue'
+import NotFound from './components/NotFound.vue'
+import Accueil from './components/Accueil.vue'
 
 Vue.use(VueRouter)
 
