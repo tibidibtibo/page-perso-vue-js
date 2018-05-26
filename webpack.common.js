@@ -1,19 +1,19 @@
-const path = require("path")
+const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('vue-html-webpack-plugin')
 
-const config = {
+module.exports = {
   entry: {
-    app: path.resolve(__dirname, "app/client-entry.js")
+    app: path.resolve(__dirname, 'app/client-entry.js')
   },
   module: {
     rules: [
       {
-        enforce: "pre",
+        enforce: 'pre',
         test: /(\.js$)|(\.vue$)/,
-        loader: "eslint-loader",
+        loader: 'eslint-loader',
         exclude: /node_modules/
       },
       {
@@ -35,37 +35,30 @@ const config = {
         exclude: [/node_modules/],
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]'
+          name: '[name].[ext]',
+          publicPath: 'images/'
         }
       },
       {
         test: /\.(jpe?g|png|gif|svg|ico)$/i,
         use: {
-          loader: "url-loader"
+          loader: 'url-loader'
         }
       }
     ]
-  },
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name].js",
-    // publicPath: '/dist/'
-  },
-  devServer: {
-    contentBase: path.resolve(__dirname, "app"),
-    watchContentBase: true,
-    // publicPath: '/dist/',
-    // hotOnly: true
   },
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(['dist']),
-    // new webpack.NamedModulesPlugin()
-    // new HtmlWebpackPlugin({
-    //   favicon: 'app/favicon.ico'
-    // })
-  ]
-};
-
-module.exports = config;
+    new HtmlWebpackPlugin({
+      vue: true,
+      favicon: 'app/favicon.ico',
+      title: 'de-boissieu.fr'
+    })
+  ],
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js'
+  }
+}

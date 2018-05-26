@@ -59,7 +59,7 @@
   import MarieAvatar from '../images/photo_marie.jpg'
   import MarieLogo from '../images/logo_marie.svg'
   import ThibaultAvatar from '../images/photo_thibault.jpg'
-  import ThibaultLogo from '../images/logo_thibault.svg'
+  import ThibaultLogo from '../images/logo_soprasteria.jpeg'
   export default {
     data: function () {
       return {
