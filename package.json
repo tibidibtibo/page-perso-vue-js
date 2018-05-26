@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npx webpack-dev-server --inline --history-api-fallback --progress --config webpack.dev.js",
-    "build": "npx webpack -- config webpack.prod.js",
+    "build": "npx webpack --config webpack.prod.js",
     "watch": "npm run build -- --watch",
     "test": "karma start test/unit/karma.config.js --single-run"
   },
