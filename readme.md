@@ -1,6 +1,6 @@
 # Page-Perso
 
-Page personelle http://de-boissieu.fr
+Page personnelle http://de-boissieu.fr
 
 ## Construit avec
 
