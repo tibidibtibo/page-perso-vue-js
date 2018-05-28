@@ -35,15 +35,13 @@ module.exports = {
         exclude: [/node_modules/],
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]',
-          publicPath: 'images/'
+          name: 'images/[name]-[hash].[ext]'
         }
       },
       {
         test: /\.(jpe?g|png|gif|svg|ico)$/i,
-        use: {
-          loader: 'url-loader'
-        }
+        include : path.join(__dirname, 'images'),
+        loader  : 'url-loader?limit=30000&name=images/[name].[ext]'
       }
     ]
   },
