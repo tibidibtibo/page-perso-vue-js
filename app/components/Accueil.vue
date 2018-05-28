@@ -15,36 +15,28 @@
           <article class="tile is-child box has-text-centered">
             <p class="title">Marie</p>
             <p class="subtitle">Les Créations de Marie</p>
-            <div class="tile is-ancestor">
-              <div class="tile is-parent">
-                <figure class="image is-128x128">
-                  <img :src="marieAvatarSrc" />
-                </figure>
-              </div>
-              <div class="tile is-parent">
-                <figure class="image is-128x128">
-                  <img :src="marieLogoSrc" />
-                </figure>
-              </div>
-            </div>
+            <nav class="level">
+              <p class="level-item has-text-centered">
+                <img :src="marieAvatarSrc" class="logo"/>
+              </p>
+              <p class="level-item has-text-centered">
+                <img :src="marieLogoSrc" class="logo"/>
+              </p>
+            </nav>
           </article>
         </router-link>
         <router-link class="tile is-parent" to="/thibault">
           <article class="tile is-child box has-text-centered">
             <p class="title">Thibault</p>
             <p class="subtitle">Concepteur-Développeur chez Sopra Steria</p>
-            <div class="tile is-ancestor">
-              <div class="tile is-parent">
-                <figure class="image is-128x128">
-                  <img :src="thibaultAvatarSrc" />
-                </figure>
-              </div>
-              <div class="tile is-parent">
-                <figure class="image is-128x128">
-                  <img :src="thibaultLogoSrc" />
-                </figure>
-              </div>
-            </div>
+            <nav class="level">
+              <p class="level-item has-text-centered">
+                <img :src="thibaultAvatarSrc" class="logo" />
+              </p>
+              <p class="level-item has-text-centered">
+                <img :src="thibaultLogoSrc" class="logo" />
+              </p>
+            </nav>
           </article>
         </router-link>
       </div>
@@ -59,7 +51,7 @@
   import MarieAvatar from '../images/photo_marie.jpg'
   import MarieLogo from '../images/logo_marie.svg'
   import ThibaultAvatar from '../images/photo_thibault.jpg'
-  import ThibaultLogo from '../images/logo_soprasteria.jpeg'
+  import ThibaultLogo from '../images/logo_soprasteria.svg'
   export default {
     data: function () {
       return {

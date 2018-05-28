@@ -22,6 +22,7 @@
 </script>
 
 <style lang="scss">
-  $primary: #287ab1;
+  $primary: #007FFF;
+  $footer-background-color: #eee;
   @import '~bulma';
 </style>

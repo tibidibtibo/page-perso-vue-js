@@ -9,20 +9,26 @@
       <router-link class="nav-item is-tab" to="/accueil">
         Accueil
       </router-link>
+      <router-link class="nav-item is-tab" to="/marie">
+        Marie
+      </router-link>
+      <router-link class="nav-item is-tab" to="/thibault">
+        Thibault
+      </router-link>
+      <router-link class="nav-item is-tab" to="/contact">
+        Contact
+      </router-link>
     </div>
   </nav>
 </template>
 
 <script>
-import Logo from '../images/logo_dB.svg'
-export default {
-  data: function () {
-    return {
-      logoSrc: Logo
+  import Logo from '../images/logo_dB.svg'
+  export default {
+    data: function () {
+      return {
+        logoSrc: Logo
+      }
     }
-  },
-  computed: {
-
   }
-}
 </script>

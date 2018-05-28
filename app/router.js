@@ -4,6 +4,7 @@ import NotFound from './components/NotFound.vue'
 import Accueil from './components/Accueil.vue'
 import Thibault from './components/Thibault.vue'
 import Marie from './components/Marie.vue'
+import Contact from './components/Contact.vue'
 
 Vue.use(VueRouter)
 
@@ -13,9 +14,10 @@ const router = new VueRouter({
   scrollBehavior: (to, from, savedPosition) => ({ y: 0 }),
   routes: [
     { path: '/accueil', component: Accueil },
-    { path: '/', redirect: '/accueil' },
     { path: '/thibault', component: Thibault },
     { path: '/marie', component: Marie },
+    { path: '/contact', component: Contact },
+    { path: '/', redirect: '/accueil' },
     { path: '*', component: NotFound }
   ]
 })
