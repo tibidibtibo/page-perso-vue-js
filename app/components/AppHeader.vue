@@ -1,13 +1,10 @@
 <template>
   <nav class="nav has-shadow">
     <div class="container">
-      <router-link to="/">
+      <router-link to="/accueil">
         <figure class="image is-64x64">
           <img :src="logoSrc" alt="Logo de-boissieu.fr" />
         </figure>
-      </router-link>
-      <router-link class="nav-item is-tab" to="/accueil">
-        Accueil
       </router-link>
       <router-link class="nav-item is-tab" to="/marie">
         Marie
@@ -16,6 +13,9 @@
         Thibault
       </router-link>
       <router-link class="nav-item is-tab" to="/contact">
+        <span class="icon">
+          <i class="fas fa-home"></i>
+        </span>
         Contact
       </router-link>
     </div>
