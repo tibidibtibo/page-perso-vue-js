@@ -13,9 +13,6 @@
         Thibault
       </router-link>
       <router-link class="nav-item is-tab" to="/contact">
-        <span class="icon">
-          <i class="fas fa-home"></i>
-        </span>
         Contact
       </router-link>
     </div>

@@ -5,7 +5,7 @@
 
             <p class="level-item">
               <nav class="level-left">
-                <p class="level-item">Suivre Marie sur : </p>
+                <p class="level-item">Suivre Marie sur </p>
                 <p class="level-item">
                   <a href="https://creationsdemarie.fr" target="_blank">
                     <img :src="marieLogoSrc" :alt="marieLogoAlt" :title="marieLogoTitle" class="social-logo">
@@ -23,7 +23,7 @@
 
             <p class="level-item">
               <nav class="level-left">
-                <p class="level-item">Suivre Thibault sur : </p>
+                <p class="level-item">Suivre Thibault sur </p>
                 <p class="level-item">
                   <a href="https://www.linkedin.com/in/thibault-de-boissieu" target="_blank">
                     <span class="icon is-small">
@@ -40,7 +40,18 @@
                 </p>
               </nav>
             </p>
+          </nav>
 
+          <nav class="level">
+            <p class="level-item is-size-7">
+              <span>
+                Propulsé par <a href="https://nodejs.org" target="_blank">NodeJS</a>,
+                <a href="https://vuejs.org" target="_blank">VueJS</a>,
+                <a href="https://webpack.js.org" target="_blank">Webpack</a>,
+                <a href="https://sass-lang.com" target="_blank">Sass</a>,
+                <a href="https://bulma.io" target="_blank">Bulma</a> (et beaucoup d'autres dépendances !)
+              </span>
+            </p>
           </nav>
 
           <nav class="level">
@@ -54,12 +65,6 @@
             </p>
             <p class="level-item">
               {{currentYear}}
-            </p>
-          </nav>
-
-          <nav class="level">
-            <p class="level-item is-small">
-              Propulsé avec : Webpack, NodeJS, VueJS et Bulma (et pleins d'autres dépendances !)
             </p>
           </nav>
 
