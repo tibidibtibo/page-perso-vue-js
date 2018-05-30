@@ -1,36 +1,37 @@
 <template>
-
   <section class="hero is-bold has-background-white-ter">
     <div class="hero-head">
-      <nav class="navbar">
-        <div class="navbar-brand">
-          <router-link class="navbar-item" to="/accueil">
-            <img :src="logoSrc" alt="Logo de-boissieu.fr" class="main-logo"/>
-          </router-link>
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <router-link class="navbar-item" to="/accueil">
+              <img :src="logoSrc" alt="Logo de-boissieu.fr" class="main-logo"/>
+            </router-link>
 
-          <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-        </div>
 
-        <div class="navbar-menu" :class="{ 'is-active': showNav }">
-          <div class="navbar-start">
-            <router-link class="navbar-item" to="/marie">
-              Marie
-            </router-link>
-            <router-link class="navbar-item" to="/thibault">
-              Thibault
-            </router-link>
+          <div class="navbar-menu" :class="{ 'is-active': showNav }">
+            <div class="navbar-start">
+              <router-link class="navbar-item" to="/marie">
+                Marie
+              </router-link>
+              <router-link class="navbar-item" to="/thibault">
+                Thibault
+              </router-link>
+            </div>
+            <div class="navbar-end">
+              <router-link class="navbar-item" to="/contact">
+                Contact
+              </router-link>
+            </div>
           </div>
-          <div class="navbar-end">
-            <router-link class="navbar-item" to="/contact">
-              Contact
-            </router-link>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   </section>
 

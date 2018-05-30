@@ -1,16 +1,14 @@
 <template>
-  <div class="container">
-    <div class="tile is-ancestor">
+  <div class="tile is-ancestor">
+    <div class="tile is-12 is-vertical is-parent">
       <div class="tile is-parent">
-        <article class="tile is-child box">
+        <article class="tile is-child">
           <p class="title">Bienvenue</p>
-          <p>Si vous souhaitez en savoir plus sur les talents de création de Marie ou sur les compétences de développement de Thibault, nous vous invitons à sélectionner l'un des liens suivants :</p>
+          <p class="has-text-centered">Si vous souhaitez en savoir plus sur les talents de création de Marie ou sur les compétences de développement de Thibault, nous vous invitons à sélectionner l'un des liens suivants :</p>
         </article>
       </div>
-    </div>
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <router-link class="tile is-parent" to="/marie">
+      <div class="tile is-12 is-parent">
+        <router-link class="tile is-parent is-6" to="/marie">
           <article class="tile is-child box has-text-centered">
             <p class="title">Marie</p>
             <p class="subtitle">Les Créations de Marie</p>
@@ -24,7 +22,7 @@
             </nav>
           </article>
         </router-link>
-        <router-link class="tile is-parent" to="/thibault">
+        <router-link class="tile is-parent is-6" to="/thibault">
           <article class="tile is-child box has-text-centered">
             <p class="title">Thibault</p>
             <p class="subtitle">Concepteur-Développeur chez Sopra Steria</p>
@@ -40,8 +38,8 @@
         </router-link>
       </div>
     </div>
-
   </div>
+
 
 
 </template>
