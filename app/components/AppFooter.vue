@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">
+    <footer class="footer has-background-white-ter">
         <div class="container">
           <nav class="level">
 
@@ -56,7 +56,7 @@
 
           <nav class="level">
             <p class="level-item">
-              <router-link class="nav-item is-tab" to="/contact">
+              <router-link class="navbar-item is-tab" to="/contact">
                 Contact
               </router-link>
             </p>
@@ -81,7 +81,6 @@
   export default {
     data: function () {
       var currentYear = (new Date()).getFullYear()
-      console.log(currentYear)
       return {
         linkedinLogoSrc: LinkedinLogo,
         linkedinLogoAlt: 'Linkedin Logo',

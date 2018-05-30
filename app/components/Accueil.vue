@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <article class="tile is-child box">

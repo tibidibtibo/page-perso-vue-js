@@ -1,8 +1,8 @@
 <template>
     <div id="app">
       <app-header></app-header>
-      <section class="main-section section">
-        <div class="container content">
+      <section class="section">
+        <div class="container">
           <router-view></router-view>
         </div>
       </section>
@@ -23,6 +23,5 @@
 
 <style lang="scss">
   $primary: #007FFF;
-  $footer-background-color: #eee;
   @import '~bulma';
 </style>
