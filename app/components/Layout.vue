@@ -1,7 +1,7 @@
 <template>
     <section id="app">
       <app-header></app-header>
-      <div class="container">
+      <div class="main-container">
         <router-view></router-view>
       </div>
       <app-footer></app-footer>
@@ -22,4 +22,8 @@
 <style lang="scss">
   $primary: #007FFF;
   @import '~bulma';
+
+  .main-container {
+    padding: 10px;
+  }
 </style>
