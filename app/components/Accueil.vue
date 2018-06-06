@@ -1,47 +1,54 @@
 <template>
-  <div class="tile is-ancestor">
-    <div class="tile is-12 is-vertical is-parent">
-      <div class="tile is-parent">
-        <article class="tile is-child">
-          <p class="title">Bienvenue</p>
-          <p class="has-text-centered">Si vous souhaitez en savoir plus sur les talents de création de Marie ou sur les compétences de développement de Thibault, nous vous invitons à sélectionner l'un des liens suivants :</p>
-        </article>
-      </div>
-      <div class="tile is-12 is-parent">
-        <router-link class="tile is-parent is-6" to="/marie">
-          <article class="tile is-child box has-text-centered">
-            <p class="title">Marie</p>
-            <p class="subtitle">Les Créations de Marie</p>
-            <nav class="level">
-              <p class="level-item has-text-centered">
-                <img :src="marieAvatarSrc" class="logo"/>
-              </p>
-              <p class="level-item has-text-centered">
-                <img :src="marieLogoSrc" class="logo"/>
-              </p>
-            </nav>
-          </article>
-        </router-link>
-        <router-link class="tile is-parent is-6" to="/thibault">
-          <article class="tile is-child box has-text-centered">
-            <p class="title">Thibault</p>
-            <p class="subtitle">Concepteur-Développeur chez Sopra Steria</p>
-            <nav class="level">
-              <p class="level-item has-text-centered">
-                <img :src="thibaultAvatarSrc" class="logo" />
-              </p>
-              <p class="level-item has-text-centered">
-                <img :src="thibaultLogoSrc" class="logo" />
-              </p>
-            </nav>
-          </article>
-        </router-link>
+  <section class="section">
+    <div class="container">
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Salutations !
+            </h1>
+            <h2 class="subtitle">
+              Si vous souhaitez en savoir plus sur les talents de création de Marie ou sur les compétences de développement de Thibault, nous vous invitons à sélectionner l'un des liens suivants</p>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <router-link to="/marie">
+            <section>
+              <p class="title">Marie</p>
+              <p class="subtitle">Les Créations de Marie</p>
+              <nav class="level">
+                <div class="level-item has-text-centered">
+                  <img :src="marieAvatarSrc" class="home-logo"/>
+                </div>
+                <div class="level-item has-text-centered">
+                  <img :src="marieLogoSrc" class="home-logo"/>
+                </div>
+              </nav>
+            </section>
+          </router-link>
+        </div>
+        <div class="column has-text-centered">
+          <router-link to="/thibault">
+            <section>
+              <p class="title">Thibault</p>
+              <p class="subtitle">Concepteur-Développeur chez Sopra Steria</p>
+              <nav class="level">
+                <div class="level-item has-text-centered">
+                  <img :src="thibaultAvatarSrc" class="home-logo" />
+                </div>
+                <div class="level-item has-text-centered">
+                  <img :src="thibaultLogoSrc" class="home-logo" />
+                </div>
+              </nav>
+            </section>
+          </router-link>
+        </div>
       </div>
     </div>
-  </div>
-
-
-
+  </section>
 </template>
 
 <script>
@@ -62,7 +69,7 @@
 </script>
 
 <style lang="scss">
-  .logo {
+  .home-logo {
     width: 200px;
   }
 </style>

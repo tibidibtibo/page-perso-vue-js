@@ -5,10 +5,10 @@
         <nav class="navbar">
           <div class="navbar-brand">
             <router-link class="navbar-item" to="/accueil">
-              <img :src="logoSrc" alt="Logo de-boissieu.fr" class="main-logo"/>
+              <img :src="logoSrc" alt="Logo de-boissieu.fr" class="header-logo"/>
             </router-link>
 
-            <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
+            <div class="navbar-burger responsive-menu" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
               <span></span>
               <span></span>
               <span></span>
@@ -50,8 +50,11 @@
 </script>
 
 <style lang="scss">
-  .main-logo {
+  .header-logo {
     width: 80px;
     max-height: none !important;
+  }
+  .responsive-menu {
+    height: 100px;
   }
 </style>

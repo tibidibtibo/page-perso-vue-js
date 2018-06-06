@@ -3,7 +3,7 @@
 	  <div class="tile is-parent is-4">
 		  <article class="tile is-child has-text-centered box">
 		    <p class="title">Thibault de Boissieu</p>
-		    <img :src="thibaultAvatarSrc" :alt="thibaultAvatarAlt" class="logo"/>
+		    <img :src="thibaultAvatarSrc" :alt="thibaultAvatarAlt" class="thibault-avatar"/>
       </article>
 	  </div>
 	  <div class="tile is-parent is-8 is-vertical">
@@ -12,7 +12,7 @@
 		    <p class="subtitle has-text-justified">Je développe sur des technos web telles que NodeJS, AngularJS et sur des technos backend Java, Spring, Hibernate, Postgre.
           <br/>Consultez mon profil LinkedIn pour plus d'informations sur mon expérience : </p>
         <a href="https://www.linkedin.com/in/thibault-de-boissieu" target="_blank">
-          <img :src="linkedinLogoSrc" :alt="linkedinLogoAlt" :title="linkedinLogoTitle" class="logo"/>
+          <img :src="linkedinLogoSrc" :alt="linkedinLogoAlt" :title="linkedinLogoTitle" class="thibault-logo"/>
         </a>
 		  </article>
       <article class="tile is-child has-text-centered box">
@@ -21,7 +21,7 @@
             pleins d'idées en tête, un PC, une connexion internet, du matériel électronique ...
             <br/>Consultez mon repo github pour en savoir plus sur mes réalisations personnelles :</p>
           <a href="https://github.com/tibidibtibo" target="_blank">
-            <img :src="githubLogoSrc" :alt="githubLogoAlt" :title="githubLogoTitle" class="logo"/>
+            <img :src="githubLogoSrc" :alt="githubLogoAlt" :title="githubLogoTitle" class="thibault-logo"/>
           </a>
       </article>
 	  </div>
@@ -50,7 +50,10 @@
 </script>
 
 <style lang="scss">
-  .logo {
+  .thibault-avatar {
     width: 200px;
+  }
+  .thibault-logo {
+    width: 250px;
   }
 </style>
