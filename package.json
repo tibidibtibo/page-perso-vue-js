@@ -10,6 +10,8 @@
   "scripts": {
     "start": "npx webpack-dev-server --inline --history-api-fallback --progress --config webpack.dev.js",
     "build": "npx webpack --config webpack.prod.js",
+    "docker-build": "npx webpack --config webpack.prod.js && docker build -t tibidibtibo/vuejsapp .",
+    "docker-start": "docker run -dit -p 8080:80 tibidibtibo/vuejsapp",
     "watch": "npm run build -- --watch",
     "test": "karma start test/unit/karma.config.js --single-run"
   },
