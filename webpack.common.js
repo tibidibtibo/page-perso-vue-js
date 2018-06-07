@@ -6,7 +6,8 @@ const HtmlWebpackPlugin = require('vue-html-webpack-plugin')
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, 'app/client-entry.js')
+    app: path.resolve(__dirname, 'app/client-entry.js'),
+    vendor: ['vue', 'vue-router']
   },
   module: {
     rules: [
