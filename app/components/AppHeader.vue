@@ -54,6 +54,9 @@
     width: 80px;
     max-height: none !important;
   }
+  .header-logo:hover {
+    opacity: 0.8;
+  }
   .responsive-menu {
     height: 100px;
   }

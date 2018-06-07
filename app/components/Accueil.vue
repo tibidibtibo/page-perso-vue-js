@@ -8,14 +8,14 @@
               Salutations !
             </h1>
             <h2 class="subtitle">
-              Si vous souhaitez en savoir plus sur les talents de création de Marie ou sur les compétences de développement de Thibault, nous vous invitons à sélectionner l'un des liens suivants</p>
+              Si vous souhaitez en savoir plus sur les talents de création de Marie ou sur les compétences de développement de Thibault, nous vous invitons à sélectionner l'un des liens suivants
             </h2>
           </div>
         </div>
       </section>
       <div class="columns">
         <div class="column has-text-centered">
-          <router-link to="/marie">
+          <router-link to="/marie" class="home-link">
             <section>
               <p class="title">Marie</p>
               <p class="subtitle">Les Créations de Marie</p>
@@ -31,7 +31,7 @@
           </router-link>
         </div>
         <div class="column has-text-centered">
-          <router-link to="/thibault">
+          <router-link to="/thibault" class="home-link">
             <section>
               <p class="title">Thibault</p>
               <p class="subtitle">Concepteur-Développeur chez Sopra Steria</p>
@@ -69,8 +69,14 @@
 </script>
 
 <style lang="scss">
+
   .home-logo {
     width: 200px;
   }
+
+  .home-logo:hover {
+    opacity: 0.7;
+  }
+
 </style>
 

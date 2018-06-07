@@ -11,10 +11,13 @@
 <script>
   import AppHeader from './AppHeader.vue'
   import AppFooter from './AppFooter.vue'
+  import Back from './Back.vue'
+
   export default {
     components: {
       'app-header': AppHeader,
-      'app-footer': AppFooter
+      'app-footer': AppFooter,
+      'back': Back
     }
   }
 </script>
