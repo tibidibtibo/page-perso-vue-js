@@ -7,6 +7,10 @@ module.exports = merge( common, {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: path.resolve(__dirname, "app"),
-    watchContentBase: true
+    watchContentBase: true,
+    overlay: {
+      warnings: true,
+      errors: true
+    }
   }
 })
