@@ -12,6 +12,9 @@
     "build": "npx webpack --config webpack.prod.js",
     "docker-build": "npx webpack --config webpack.prod.js && docker build -t tibidibtibo/de-boissieu .",
     "docker-start": "docker run -dit --name de-boissieu-dev -p 8080:80 tibidibtibo/de-boissieu",
+    "docker-stop": "docker stop de-boissieu-dev",
+    "docker-remove": "docker rm de-boissieu-dev && docker rmi tibidibtibo/de-boissieu",
+    "docker-stop-remove": "npm run docker-stop && npm run docker-remove",
     "docker-bash": "docker exec -it de-boissieu-dev bash",
     "watch": "npm run build -- --watch",
     "test": "karma start test/unit/karma.config.js --single-run"
