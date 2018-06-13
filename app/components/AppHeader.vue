@@ -1,39 +1,35 @@
 <template>
-  <section class="hero is-bold has-background-white-ter">
-    <div class="hero-head">
-      <div class="container">
-        <nav class="navbar">
-          <div class="navbar-brand">
-            <router-link class="navbar-item" to="/accueil">
-              <img :src="logoSrc" alt="Logo de-boissieu.fr" class="header-logo"/>
-            </router-link>
 
-            <div class="navbar-burger responsive-menu" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <router-link class="navbar-brand" to="/accueil">
+      <img :src="logoSrc" alt="Logo de-boissieu.fr" class="header-logo"/>
+    </router-link>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <div class="navbar-menu" :class="{ 'is-active': showNav }">
-            <div class="navbar-start">
-              <router-link class="navbar-item" to="/marie">
-                Marie
-              </router-link>
-              <router-link class="navbar-item" to="/thibault">
-                Thibault
-              </router-link>
-            </div>
-            <div class="navbar-end">
-              <router-link class="navbar-item" to="/contact">
-                Contact
-              </router-link>
-            </div>
-          </div>
-        </nav>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto header-link text-center">
+        <li class="nav-item">
+          <router-link class="nav-link" to="/marie">
+            Marie
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/thibault">
+            Thibault
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/contact">
+            Contact
+          </router-link>
+        </li>
+      </ul>
     </div>
-  </section>
+  </nav>
 
 </template>
 
@@ -51,13 +47,13 @@
 
 <style lang="scss">
   .header-logo {
-    width: 80px;
-    max-height: none !important;
+    width: 60px;
+    opacity: 1;
   }
   .header-logo:hover {
     opacity: 0.8;
   }
-  .responsive-menu {
-    height: 100px;
+  .header-link {
+    font-size: 1.2em;
   }
 </style>

@@ -24,9 +24,24 @@
 
 <style lang="scss">
   $primary: #007FFF;
-  @import '~bulma';
+  @import '~bootstrap/scss/bootstrap.scss';
 
   .main-container {
     padding: 10px;
+  }
+
+  .deco-none {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .deco-none:link {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .deco-none:hover {
+    color: inherit;
+    text-decoration: inherit;
   }
 </style>
