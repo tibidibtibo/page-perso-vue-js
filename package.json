@@ -1,6 +1,6 @@
 {
   "name": "de-boissieu.fr",
-  "version": "1.0.0-SNAPSHOT",
+  "version": "1.0.0",
   "description": "Page perso de-boissieu.fr'",
   "main": "index.js",
   "repository": {

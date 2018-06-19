@@ -83,7 +83,7 @@
     font-size: 0.8em;
   }
   .footer-container {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 20px;
   }
 </style>
