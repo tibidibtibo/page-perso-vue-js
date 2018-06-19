@@ -27,7 +27,10 @@
   @import '~bootstrap/scss/bootstrap.scss';
 
   .main-container {
-    padding: 10px;
+    padding-top: 130px;
+    // padding-bottom: 10px;
+    // padding-left:10px;
+    // padding-right: 10px;
   }
 
   .deco-none {

@@ -1,31 +1,48 @@
 <template>
-  <div class="tile is-ancestor">
-	  <div class="tile is-parent is-4">
-		  <article class="tile is-child has-text-centered box">
-		    <p class="title">Thibault de Boissieu</p>
-		    <img :src="thibaultAvatarSrc" :alt="thibaultAvatarAlt" class="thibault-avatar"/>
-      </article>
-	  </div>
-	  <div class="tile is-parent is-8 is-vertical">
-		  <article class="tile is-child has-text-centered box">
-		    <p class="title">Développeur full-stack <a href="https://www.soprasteria.com" target="_blank">chez Sopra Steria</a></p>
-		    <p class="subtitle has-text-justified">Je développe sur des technos web telles que NodeJS, AngularJS et sur des technos backend Java, Spring, Hibernate, Postgre.
-          <br/>Consultez mon profil LinkedIn pour plus d'informations sur mon expérience : </p>
-        <a href="https://www.linkedin.com/in/thibault-de-boissieu" target="_blank">
-          <img :src="linkedinLogoSrc" :alt="linkedinLogoAlt" :title="linkedinLogoTitle" class="thibault-logo"/>
-        </a>
-		  </article>
-      <article class="tile is-child has-text-centered box">
-          <p class="title">Développeur à la maison</p>
-          <p class="subtitle has-text-justified">Une formation d'ingénieur en Électronique-Télécommunications-Informatique,
-            pleins d'idées en tête, un PC, une connexion internet, du matériel électronique ...
-            <br/>Consultez mon repo github pour en savoir plus sur mes réalisations personnelles :</p>
-          <a href="https://github.com/tibidibtibo" target="_blank">
-            <img :src="githubLogoSrc" :alt="githubLogoAlt" :title="githubLogoTitle" class="thibault-logo"/>
-          </a>
-      </article>
-	  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <h3>Thibault de Boissieu</h3>
+        <img :src="thibaultAvatarSrc" :alt="thibaultAvatarAlt" class="thibault-avatar img-fluid"/>
+      </div>
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-8 text-center">
+            <h2>Développeur full-stack <a href="https://www.soprasteria.com" target="_blank">chez Sopra Steria</a></h2>
+            <h6 class="text-justify">
+              Je développe sur des technos web telles que NodeJS, AngularJS et sur des technos backend Java, Spring, Hibernate, Postgre.
+              Consultez mon profil LinkedIn pour plus d'informations sur mon expérience :
+            </h6>
+            <a href="https://www.linkedin.com/in/thibault-de-boissieu" target="_blank" class="btn btn-secondary">linkedin.com/thibault-de-boissieu</a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a href="https://www.linkedin.com/in/thibault-de-boissieu" target="_blank">
+              <img :src="linkedinLogoSrc" :alt="linkedinLogoAlt" :title="linkedinLogoTitle" class="thibault-logo img-fluid"/>
+            </a>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <a href="https://github.com/tibidibtibo" target="_blank">
+              <img :src="githubLogoSrc" :alt="githubLogoAlt" :title="githubLogoTitle" class="thibault-logo img-fluid"/>
+            </a>
+          </div>
+          <div class="col-sm-8 text-center">
+            <h2>Développeur à la maison</h2>
+            <h6 class="text-justify">
+              Une formation d'ingénieur en Électronique-Télécommunications-Informatique,
+              pleins d'idées en tête, un PC, une connexion internet, du matériel électronique ...
+              Consultez mon repo github pour en savoir plus sur mes réalisations personnelles, ce simple site web par exemple ;-)
+            </h6>
+            <a href="https://github.com/tibidibtibo" target="_blank" class="btn btn-secondary">github.com/tibidibtibo</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
 </template>
 
 <script>

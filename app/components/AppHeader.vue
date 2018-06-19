@@ -1,6 +1,6 @@
 <template>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <router-link class="navbar-brand" to="/accueil">
       <img :src="logoSrc" alt="Logo de-boissieu.fr" class="header-logo"/>
     </router-link>
@@ -47,7 +47,7 @@
 
 <style lang="scss">
   .header-logo {
-    width: 60px;
+    width: 40px;
     opacity: 1;
   }
   .header-logo:hover {

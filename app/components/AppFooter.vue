@@ -1,5 +1,5 @@
 <template>
-  <div class="container footer-container">
+  <div class="footer-container bg-light">
     <div class="row text-center footer-text-sm">
       <div class="col-sm">
         Suivre Marie sur
