@@ -53,7 +53,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       vue: true,
       favicon: 'app/favicon.ico',
-      title: 'de-boissieu.fr'
+      title: 'de-boissieu.fr',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1'
+      }
     })
   ],
   output: {
