@@ -2,7 +2,7 @@
   <div class="container">
 
     <div class="jumbotron">
-      <h1 class="display-4">Salutations !</h1>
+      <h2>Salutations !</h2>
       <p class="lead">Si vous souhaitez en savoir plus sur les talents de création de Marie ou sur les compétences de développement de Thibault, nous vous invitons à sélectionner l'un des liens suivants
       </p>
     </div>

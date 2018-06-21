@@ -61,6 +61,7 @@
     width: 200px;
   }
   .marie-logo {
+    padding-top: 5px;
     width: 250px;
   }
 </style>

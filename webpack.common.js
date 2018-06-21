@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('vue-html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -57,7 +58,10 @@ module.exports = {
       meta: {
         viewport: 'width=device-width, initial-scale=1'
       }
-    })
+    }),
+    new CopyWebpackPlugin([
+        { from: '.htaccess', to: '.' }
+    ])
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),

@@ -71,6 +71,7 @@
     width: 200px;
   }
   .thibault-logo {
+    padding-top: 5px;
     width: 250px;
   }
 </style>
