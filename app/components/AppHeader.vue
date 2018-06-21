@@ -5,12 +5,12 @@
       <img :src="logoSrc" alt="Logo de-boissieu.fr" class="header-logo"/>
     </router-link>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
-      data-target=".navbar-collapse">
+      data-target=".navbar-collapse" v-on:click="openMenu()">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto header-link text-center">
+      <ul class="navbar-nav mr-auto header-link text-center" v-if="menuOpened" v-on:click="closeMenu()">
         <li class="nav-item">
           <router-link class="nav-link" to="/marie">
             Marie
@@ -38,7 +38,15 @@
     data: function () {
       return {
         logoSrc: Logo,
-        showNav: false
+        menuOpened: false
+      }
+    },
+    methods: {
+      openMenu: function () {
+        this.menuOpened = true
+      },
+      closeMenu: function () {
+        this.menuOpened = false
       }
     }
   }
