@@ -60,6 +60,7 @@
   .header-link {
     text-decoration: none;
     font-size: 1.2em;
+    color: #444;
   }
   .header-link:hover {
     text-decoration: none;
