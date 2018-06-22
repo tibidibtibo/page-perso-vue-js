@@ -25,12 +25,10 @@
 <style lang="scss">
   $primary: #007FFF;
   @import '~bootstrap/scss/bootstrap.scss';
+  @import '~bootstrap-vue/dist/bootstrap-vue.css';
 
   .main-container {
     padding-top: 130px;
-    // padding-bottom: 10px;
-    // padding-left:10px;
-    // padding-right: 10px;
   }
 
   .deco-none {

@@ -1,34 +1,40 @@
 <template>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <router-link class="navbar-brand" to="/accueil">
-      <img :src="logoSrc" alt="Logo de-boissieu.fr" class="header-logo"/>
-    </router-link>
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-      data-target=".navbar-collapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <b-navbar toggleable="md" type="light" variant="light" fixed="top">
 
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto header-link text-center">
-        <li class="nav-item">
-          <router-link class="nav-link" to="/marie">
+    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+
+    <b-navbar-brand>
+      <b-link to="/accueil">
+        <img :src="logoSrc" alt="Logo de-boissieu.fr" class="header-logo"/>
+      </b-link>
+    </b-navbar-brand>
+
+    <b-collapse is-nav id="nav_collapse">
+
+      <b-navbar-nav>
+        <b-nav-item>
+          <b-link class="header-link" to="/marie">
             Marie
-          </router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/thibault">
+          </b-link>
+        </b-nav-item>
+        <b-nav-item>
+          <b-link class="header-link" to="/thibault">
             Thibault
-          </router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/contact">
+          </b-link>
+        </b-nav-item>
+      </b-navbar-nav>
+
+      <b-navbar-nav class="ml-auto">
+        <b-nav-item>
+          <b-link class="header-link" to="/contact">
             Contact
-          </router-link>
-        </li>
-      </ul>
-    </div>
-  </nav>
+          </b-link>
+        </b-nav-item>
+      </b-navbar-nav>
+
+    </b-collapse>
+  </b-navbar>
 
 </template>
 
@@ -52,6 +58,10 @@
     opacity: 0.8;
   }
   .header-link {
+    text-decoration: none;
     font-size: 1.2em;
+  }
+  .header-link:hover {
+    text-decoration: none;
   }
 </style>
