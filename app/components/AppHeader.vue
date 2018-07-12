@@ -4,32 +4,24 @@
 
     <b-navbar-toggle target="headerCollapse"></b-navbar-toggle>
 
-    <b-navbar-brand>
-      <router-link to="/accueil">
-        <img :src="logoSrc" alt="Logo de-boissieu.fr" class="header-logo"/>
-      </router-link>
+    <b-navbar-brand to="/accueil">
+      <img :src="logoSrc" alt="Logo de-boissieu.fr" class="header-logo"/>
     </b-navbar-brand>
 
     <b-collapse is-nav id="headerCollapse">
 
       <b-navbar-nav>
-        <b-nav-item>
-          <b-link class="header-link" to="/marie" v-b-toggle.headerCollapse>
-            Marie
-          </b-link>
+        <b-nav-item class="header-link" to="/marie">
+          Marie
         </b-nav-item>
-        <b-nav-item>
-          <b-link class="header-link" to="/thibault" v-b-toggle.headerCollapse>
-            Thibault
-          </b-link>
+        <b-nav-item class="header-link" to="/thibault">
+          Thibault
         </b-nav-item>
       </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto">
-        <b-nav-item>
-          <b-link class="header-link" to="/contact" v-b-toggle.headerCollapse>
-            Contact
-          </b-link>
+        <b-nav-item class="header-link" to="/contact">
+          Contact
         </b-nav-item>
       </b-navbar-nav>
 
