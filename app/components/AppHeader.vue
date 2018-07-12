@@ -4,7 +4,7 @@
 
     <b-navbar-toggle target="headerCollapse"></b-navbar-toggle>
 
-    <b-navbar-brand href="/accueil">
+    <b-navbar-brand href="/accueil" v-b-tooltip.hover title="Accueil">
       <img :src="logoSrc" alt="Logo de-boissieu.fr" class="header-logo"/>
     </b-navbar-brand>
 
