@@ -27,7 +27,7 @@
         <a href="https://vuejs.org" target="_blank">VueJS</a>,
         <a href="https://webpack.js.org" target="_blank">Webpack</a>,
         <a href="https://sass-lang.com" target="_blank">Sass</a>,
-        <a href="https://bulma.io" target="_blank">Bulma</a> (et beaucoup d'autres dépendances !)
+        <a href="https://bootstrap-vue.js.org" target="_blank">Bootstrap 4 - Vue</a> (et beaucoup d'autres dépendances !)
       </div>
     </div>
     <hr>
